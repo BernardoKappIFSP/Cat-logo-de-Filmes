@@ -19,8 +19,8 @@ Cada filme possui:
 
 ## 🔗 Links
 
-- **Repositório GitHub:** 
-- **Projeto rodando na Vercel:** 
+- **Repositório GitHub:** https://github.com/BernardoKappIFSP/Cat-logo-de-Filmes
+- **Projeto rodando na Vercel:** cat-logo-de-filmes-sigma.vercel.app
 
 ---
 
