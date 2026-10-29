@@ -1,0 +1,157 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+:root {
+  --azul-escuro: #0b2545;
+  --azul: #1d4ed8;
+  --azul-medio: #3b82f6;
+  --azul-claro: #dbeafe;
+  --azul-fundo: #eff6ff;
+  --azul-borda: #bfdbfe;
+  --texto: #0f172a;
+}
+.cabecalho {
+  border: 1px solid var(--azul-escuro);
+  background: var(--azul-escuro);
+  color: #fff;
+  box-shadow: 0 10px 12px -4px rgba(29, 78, 216, 0.45);
+  text-align: center;
+  padding: 16px 0 12px;
+  margin-bottom: 32px;
+}
+
+.cabecalho h1 {
+  margin: 0 0 10px;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+}
+
+.cabecalho ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.cabecalho li a {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 1.25rem;
+  color: var(--azul-claro);
+  text-decoration: none;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.cabecalho li a:hover {
+  background: var(--azul-medio);
+  color: #fff;
+}
+
+
+.lista-filmes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-filme {
+  display: flex;
+  gap: 80px;
+  padding: 20px 16px;
+  border: 1px solid var(--azul-borda);
+  border-radius: 6px;
+  color: var(--texto);
+  text-decoration: none;
+  font-size: 1.1rem;
+  background: var(--azul-fundo);
+}
+
+.item-filme:hover {
+   background: var(--azul);
+  color: #fff;
+  border-color: var(--azul);
+}
+
+.item-filme span:first-child { min-width: 90px; }
+
+
+.cartao {
+  border: 1px solid var(--azul-borda);
+  background: var(--azul-fundo);
+  border-radius: 6px;
+  padding: 24px 28px 28px;
+  font-size: 1.1rem;
+}
+
+.cartao h2 { margin-top: 0; }
+.cartao p { margin: 8px 0; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario input {
+   padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid var(--azul-borda);
+  background: #fff;
+  border-radius: 4px;
+}
+
+.formulario input:focus {
+ outline: 2px solid var(--azul-medio);
+  outline-offset: 1px;
+}
+
+.acoes {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+
+.botao {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 1rem;
+  border: 1px solid var(--azul);
+  border-radius: 4px;
+  background: var(--azul);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.acoes .botao { margin-top: 0; }
+
+.botao:hover { background: var(--azul-escuro); border-color: var(--azul-escuro); }
+.botao:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.botao.secundario { background: #fff; color: var(--azul); }
+.botao.secundario:hover { background: var(--azul-claro); }
+
+.botao.perigo { background: #b00020; border-color: #b00020; }
+.botao.perigo:hover { background: #8a001a; }
+
+
+.mensagem { font-size: 1.05rem; }
+.mensagem.erro { color: #b00020; }
+
+@media (max-width: 600px) {
+  .cabecalho h1 { font-size: 1.6rem; }
+  .cabecalho ul { gap: 8px; }
+  .item-filme { gap: 24px; }
+}
